@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class='container'>
+    
+    <form role='form' name='userForm' ng-submit="userForm.$valid && userCtrl.save()">
+        <div class='form-group' >
+            <label for='firstName'>Nombres</label>
+            <input type='text' class='form-control' id='firstName' placeholder='Enter value' ng-model="user.firstName" required/>
+        </div>
+        <div class='form-group' >
+            <label for='lastName'>Apellidos</label>
+            <input type='text' class='form-control' id='lastName' placeholder='Enter value' ng-model="user.lastName" required/>
+        </div>
+        <div class='form-group' >
+            <label for='firstName'>Fecha Nacimiento</label>
+<div class="form-group" id="nacio" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+  <input class="form-group" size="16" type="date" value="12-02-2012" id='nacio' ng-model="user.nacio"/>
+  <span class="add-on"><i class="icon-th"></i></span>
+</div>        </div>
+        <input type="submit" value="Guardar" class='btn btn-primary'/>
+        <input type="reset" value="Cancelar" class='btn btn-default'/>
+    </form>
+    <div class ="col-sm-4 col-sm-offset-4" id="msj"></div>
+</div>
